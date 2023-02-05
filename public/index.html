@@ -81,9 +81,17 @@
 
 </body>
 <script>
+function wait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end < start + ms) {
+     end = new Date().getTime();
+  }
+}
 window.onload = function(){
 document.getElementById('session-create-btn').click()
 document.getElementById('session-url').value = 'https://MerryYoungEvent.jaydogstack.repl.co'
+wait(1000)
 document.getElementById('session-go').click()
 };
 </script>
