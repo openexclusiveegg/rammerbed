@@ -11,7 +11,7 @@ const RammerheadLogging = require('../classes/RammerheadLogging');
 
 if (config.reverseProxy) {
     config.getServerInfo = (req) => {
-        return { hostname: new URL('http://' + req.headers.host).hostname, port: 443, crossDomainPort: 443, protocol: 'https:' };
+        return { hostname: new URL('http://' + req.headers.host).hostname, port: 200, crossDomainPort: 200, protocol: 'https:' };
     }
 }
 
